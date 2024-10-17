@@ -8,7 +8,7 @@ Pour commencer, nous utilisons la bibliothèque libpcap pour créer un gestionna
 
 Nous vérifions ensuite que la connexion est bien de type Ethernet en utilisant la fonction pcap_datalink().
 
-Après cela, nous compilons un filtre avec la fonction pcap_compile() pour spécifier les types de paquets que nous souhaitons capturer (dans ce cas, les paquets TCP). Ce filtre est ensuite appliqué avec pcap_setfilter() afin de ne capturer que les paquets correspondants.
+Après cela, nous compilons un filtre avec la fonction pcap_compile() pour spécifier les types de paquets que nous souhaitons capturer. Ce filtre est ensuite appliqué avec pcap_setfilter() afin de ne capturer que les paquets correspondants.
 
 La fonction pcap_loop() est ensuite utilisée pour démarrer la capture et lire le nombre souhaité de paquets. Chaque fois qu'un paquet est capturé, cette fonction appelle la fonction de rappel my_packet_handler. Dans my_packet_handler, nous utilisons read_rules() pour lire les règles définies dans le fichier "rules.txt" et les stocker dans une structure de données.
 
