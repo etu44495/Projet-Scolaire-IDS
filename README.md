@@ -1,4 +1,4 @@
-# Context
+# Contexte
 Développement d'un système de détection d'intrusion dans le cadre d'un projet scolaire, afin d'acquérir une approche de base pour la capture et le filtrage de paquets réseau avec libpcap.
 
 # Fonctionnement
