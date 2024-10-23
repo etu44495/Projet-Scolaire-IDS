@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "populate2.h"
+#include "populate.h"
 
 void generate_ip(unsigned int ip, char ip_addr[])
 {
